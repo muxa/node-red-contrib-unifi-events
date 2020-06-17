@@ -1,4 +1,4 @@
-node-red-condrib-unifi-events is a Node-RED module that allows to receive events from [UniFi devices](http://www.ubnt.com/) via the official UniFi-Controller API. Based on npm package ubnt-unifi
+node-red-contrib-unifi-events is a Node-RED module that allows to receive events from [UniFi devices](http://www.ubnt.com/) via the official UniFi-Controller API. Based on npm package ubnt-unifi
 
 ## License
 MIT License

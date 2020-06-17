@@ -1,5 +1,5 @@
 {
-  "name": "node-red-condrib-unifi-events",
+  "name": "node-red-contrib-unifi-events",
   "version": "1.0.0",
   "description": "Node-RED module that allows to receive events from UniFi devices via the official UniFi-Controller API",
   "main": "unifi.js",
@@ -9,7 +9,7 @@
   "author": "Mikhail Diatchenko",
   "repository": {
     "type": "git",
-    "url": "https://github.com/muxa/node-red-condrib-unifi-events"
+    "url": "https://github.com/muxa/node-red-contrib-unifi-events"
   },
   "license": "MIT",
   "keywords": [
