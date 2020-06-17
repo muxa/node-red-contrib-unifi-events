@@ -1,0 +1,19 @@
+{
+  "name": "red-condrib-unifi-events",
+  "version": "1.0.0",
+  "description": "Receives events from Unifi controller",
+  "main": "unifi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Diatchenko",
+  "license": "MIT",
+  "dependencies": {
+    "ubnt-unifi": "git+https://github.com/muxa/ubnt-unifi.git"
+  },
+  "node-red": {
+    "nodes": {
+      "unifi-events": "unifi.js"
+    }
+  }
+}

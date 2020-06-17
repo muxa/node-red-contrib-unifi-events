@@ -1,0 +1,67 @@
+<script type="text/javascript">
+    RED.nodes.registerType('UnifiEvents',{
+        category: 'output',
+        color: '#C0DEED',
+        defaults: {
+            name: {value:""},
+			host: {value:"unifi"},
+			port: {value:8443, validate:RED.validators.number()},
+			site: {value:"default"},
+            insecure: {value:false},
+            unifios: {value:false},
+        },
+		credentials: {
+		    username: {type:"text"},
+		    password: {type:"password"}
+		},
+        inputs:0,
+        outputs:1,
+        icon: "bridge.png",
+        label: function() {
+            return this.name||"UnifiEvents";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="UnifiEvents">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+	<div class="form-row">
+        <label for="node-input-host"><i class="fa fa-globe"></i> Server</label>
+        <input class="input-append-left" type="text" id="node-input-host" placeholder="Host" style="width: 40%;" >
+        <label for="node-input-port" style="margin-left: 10px; width: 35px; "> Port</label>
+        <input type="text" id="node-input-port" placeholder="Port" style="width:45px">
+    </div>
+    <div class="form-row">
+        <label>&nbsp;</label>
+        <input type="checkbox" id="node-input-insecure" placeholder="xx" style="display: inline-block; width: auto; vertical-align: top;">
+        <label for="node-input-insecure" style="width: 70%;">Self-signed Certificate</label>
+    </div>
+    <div class="form-row">
+            <label>&nbsp;</label>
+            <input type="checkbox" id="node-input-unifios" placeholder="Unifi OS" style="display: inline-block; width: auto; vertical-align: top;">
+            <label for="node-input-unifios" style="width: 70%;">Unifi OS</label>
+    </div>
+	<div class="form-row">
+        <label for="node-input-site"><i class="fa fa-list"></i> Site</label>
+        <input type="text" id="node-input-site" placeholder="Site Name">
+    </div>
+	<div class="form-row">
+		<label for="node-input-username"><i class="fa fa-user"></i> Username</label>
+		<input type="text" id="node-input-username" placeholder="Username">
+	</div>
+	<div class="form-row">
+		<label for="node-input-password"><i class="fa fa-lock"></i> Password</label>
+		<input type="password" id="node-input-password" placeholder="Password">
+	</div>
+
+</script>
+
+<script type="text/x-red" data-help-name="UnifiEvents">
+	<p>Connects to a Unifi Controller and gets real-time events.</p>
+	<p>Returns event data with some additional information/objects</p>
+    <p>For more information see the <a href="https://github.com/muxa/node-red-condrib-unifi-events" target="_blank">GitHub</a> site.</p>
+    <p>Version 1.0.0</p>
+</script>
