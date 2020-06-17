@@ -1,5 +1,5 @@
 {
-  "name": "red-condrib-unifi-events",
+  "name": "node-red-condrib-unifi-events",
   "version": "1.0.0",
   "description": "Node-RED module that allows to receive events from UniFi devices via the official UniFi-Controller API",
   "main": "unifi.js",
